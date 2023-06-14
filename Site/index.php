@@ -13,19 +13,44 @@
     <title>Home</title>
 </head>
 <body>
-    <header>
+    <header class="scroll-shadow">
         <nav>
-            <span class="logo">SAE 24</span>
-            <ul class="pages">
+            <img class="logo" src="./Image/LogoVert.png" alt="Logo">
+            <ul>
                 <li><a class="" href="">Accueil</a></li>
-                <li><a class="" href="">Présentation du cabinet</a></li>
+                <li><a class="" href="">cabinet</a></li>
                 <li><a class="" href="">Notre équipe</a></li>
                 <li><a class="" href="">(Prise de RDV)</a></li>
-                <li><a class="" href="">Mention légale</a></li>
                 <li><a class="" href="">Ou nous trouver</a></li>
             </ul>
             <a class="connexion_btn" href="">Connexion</a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
         </nav> 
-    </header>    
+    </header>
+    <section id="">
+
+    </section>
+    <section id=""></section>
+    <section id=""></section>
+    <section id=""></section>
+    <section id=""></section>
+    <footer>
+        <ul>
+            <li><a class="" href="">Mention légale</a></li>
+        </ul>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+  var scrollPosition = window.scrollY;
+  var element = document.querySelector('.scroll-shadow');
+  
+  if (scrollPosition > 0) {
+    element.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.2)';
+  } else {
+    element.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0)';
+  }
+});
+    </script>   
 </body>
 </html>
