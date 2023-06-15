@@ -85,9 +85,44 @@ nav .logo {
 .responsive {
     display: none;
 }
+/* ================================================================= */
+                        /* Accueil & Cabinet */
+/* ================================================================= */
+#Accueil, #Cabinet {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+#Accueil ul, #Cabinet ul {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: 80%;
+}
+#Accueil ul h1, #Cabinet ul h1 {
+    font-size: 38px;
+}
+#Accueil ul h2, #Cabinet ul p {
+    font-size: 15px;
+}
+#Cabinet ul p {
+    margin-top: 10px;
+    line-height: 24px;
+}
+#Accueil ul span, #Cabinet ul span{
+    font-size: 110%;
+    background: linear-gradient(90deg, rgba(4,161,24,1) 40%, rgba(111,202,58,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#Accueil ul img, #Cabinet ul img {
+    width: 100%;
+}
 
-
-
+/* ================================================================= */
+                            /* Responsive */
+/* ================================================================= */
 @media screen and (max-width: 1200px) {
     .connexion_btn {
         display: none;
