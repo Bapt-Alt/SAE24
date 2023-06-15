@@ -57,13 +57,16 @@ nav .logo {
     height: 80px;
 }
 .connexion_btn {
-    background: linear-gradient(90deg, rgba(4,161,24,1) 51%, rgba(67,125,33,1) 100%);
+    background: linear-gradient(90deg, rgba(4,161,24,1) 61%, rgba(67,125,33,1) 100%);
     color: white;
     margin: 10px;
     border-radius: 5px;
     padding: 16px 45px;
     text-align: center;
     font-size: 14px;
+}
+.connexion_btn:hover {
+    background: linear-gradient(-90deg, rgba(4,161,24,1) 61%, rgba(67,125,33,1) 100%);
 }
 .menu-icon {
     display: none;
@@ -75,22 +78,58 @@ nav .logo {
 .menu-toggle {
     display: none;
 }
+.bull {
+    color: #04A118;
+    cursor: default;
+}
+.responsive {
+    display: none;
+}
 
 
 
 @media screen and (max-width: 1200px) {
-    nav ul {
-      display: none;
-    }
     .connexion_btn {
         display: none;
     }
+    .responsive {
+      display: flex;
+    }
     .menu-icon {
+      display: flex;
+    }
+    nav ul {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      z-index: 999;
+    }
+    nav ul.active {
         display: flex;
+      }
+    ul li {
+      width: 100%;
+      padding: 10px 0;
+      justify-content: center;
     }
-    .menu-toggle:checked ~ .menu-icon {
-        color: aquamarine;
+     ul li a {
+      font-size: 18px;
+      color: black;
+      transition: color 0.3s ease;
     }
-}
+     ul li a:hover {
+      color: #6FCA3A;
+    }
+  }
+  
+
+
 
 
