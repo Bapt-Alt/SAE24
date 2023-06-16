@@ -49,12 +49,69 @@
             <li><img src="./Image/cabinet-removebg.png" alt="Un cabinet"></li>
             <li>
                 <h1>Notre <span>Cabinet</span>,</h1>
-                <p><span>&bull;</span> Nos experts en médecine mettent tout en oeuvre pour vous fournir les meilleurs soins dans les meilleurs delais. </p>
-                <p><span>&bull;</span> Nous sommes équipé d'équipement à la pointe de la technologie nous permettant d'éxercer une médecine présice et efficace.</p>
+                <p><span>&bull;</span> Nos experts en médecine mettent tout en oeuvre <br> pour vous fournir les meilleurs soins dans les meilleurs delais. </p>
+                <p><span>&bull;</span> Nous sommes équipé d'équipement à la pointe de la technologie <br> nous permettant d'éxercer une médecine présice et efficace.</p>
             </li>
         </ul>
     </section>
-    <section id=""></section>
+    <section id="Slogan">
+        <h1>"Benevolus Hominibus, Genium Bonitate Yuvat"</h1>
+        <h2>"La bienveillance envers les hommes nourrit l'esprit par la bonté"</h2>
+    </section>
+    <section id="Equipe">
+        <ul class="column">
+            <li>
+                <ul class="line">
+                    <li>
+                        <ul class="column portrait">
+                            <li><img src="./Image/docteur.png" alt=""></li>
+                            <li><h1>Yassir Boulouiha</h1></li>
+                            <li><p>Kiné</p></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="column portrait">
+                            <li><img src="./Image/docteur.png" alt=""></li>
+                            <li><h1>Yassir Boulouiha</h1></li>
+                            <li><p>Kiné</p></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="column portrait">
+                            <li><img src="./Image/docteur.png" alt=""></li>
+                            <li><h1>Yassir Boulouiha</h1></li>
+                            <li><p>Kiné</p></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="line">
+                    <li>
+                        <ul class="column portrait">
+                            <li><img src="./Image/docteur.png" alt=""></li>
+                            <li><h1>Yassir Boulouiha</h1></li>
+                            <li><p>Kiné</p></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="column portrait">
+                            <li><img src="./Image/docteur.png" alt=""></li>
+                            <li><h1>Yassir Boulouiha</h1></li>
+                            <li><p>Kiné</p></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="column portrait">
+                            <li><img src="./Image/docteur.png" alt=""></li>
+                            <li><h1>Yassir Boulouiha</h1></li>
+                            <li><p>Kiné</p></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
     <section id=""></section>
     <section id=""></section>
     <footer>

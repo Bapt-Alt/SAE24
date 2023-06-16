@@ -86,14 +86,15 @@ nav .logo {
     display: none;
 }
 /* ================================================================= */
-                        /* Accueil & Cabinet */
+                    /* Accueil & Cabinet & Équipe */
 /* ================================================================= */
 #Accueil, #Cabinet {
-    margin-top: 100px;
+    margin-top: 200px;
+    margin-bottom: 200px;
     display: flex;
     justify-content: center;
 }
-#Accueil ul, #Cabinet ul {
+#Accueil ul, #Cabinet ul{
     align-items: center;
     justify-content: space-between;
     display: flex;
@@ -105,10 +106,6 @@ nav .logo {
 #Accueil ul h2, #Cabinet ul p {
     font-size: 15px;
 }
-#Cabinet ul p {
-    margin-top: 10px;
-    line-height: 24px;
-}
 #Accueil ul span, #Cabinet ul span{
     font-size: 110%;
     background: linear-gradient(90deg, rgba(4,161,24,1) 40%, rgba(111,202,58,1) 100%);
@@ -119,7 +116,73 @@ nav .logo {
 #Accueil ul img, #Cabinet ul img {
     width: 100%;
 }
+/* Cabinet */
+#Cabinet ul p {
+    margin-top: 10px;
+    line-height: 24px;
+    width: 80%;
+}
+/* Équipe */
+#Equipe {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#Equipe ul {
+    justify-content: center;
+}
+#Equipe .column{
+    display: flex;
+    flex-direction: column;
+}
+#Equipe .column li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#Equipe .line{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+#Equipe .line li {
+    display: flex;
+    justify-content: center;
+}              
+#Equipe .column img {
+    width: 200px;
+    height: 400px;
+    border-radius: 5px;
+}
+#Equipe .portrait:hover li h1 {
+    color: #04A118;
+}
+#Equipe p {
+    margin-bottom: 50px;
+}
+/* ================================================================= */
+                            /* Slogan */
+/* ================================================================= */
+#Slogan {
+    background: linear-gradient(180deg, rgba(4,161,24,1) 40%, rgba(111,202,58,1) 100%);
 
+}
+#Slogan h1 {
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+#Slogan h2 {
+    padding-bottom: 30px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
 /* ================================================================= */
                             /* Responsive */
 /* ================================================================= */
@@ -161,6 +224,12 @@ nav .logo {
     }
      ul li a:hover {
       color: #6FCA3A;
+    }
+    #Accueil ul, #Cabinet ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
   }
   
