@@ -152,8 +152,8 @@ nav .logo {
     justify-content: center;
 }              
 #Equipe .column img {
-    width: 200px;
-    height: 400px;
+    width: 250px;
+    height: 350px;
     border-radius: 5px;
 }
 #Equipe .portrait:hover li h1 {
@@ -182,6 +182,112 @@ nav .logo {
     text-align: center;
     color: white;
     font-size: 20px;
+}
+/* ================================================================= */
+                        /* Où nous trouver */
+/* ================================================================= */
+#Trouver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    margin-bottom: 200px;
+}
+#Trouver ul {
+    display: flex;
+    align-items: center;
+}
+#Trouver h1 {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-size: 38px;
+}
+#Trouver p {
+    padding-left: 20px;
+}
+#Trouver span, #Trouver a {
+    font-size: 120%;
+    background: linear-gradient(90deg, rgba(4,161,24,1) 40%, rgba(111,202,58,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#Trouver iframe {
+    border: #04A118 solid 3px;
+    border-radius: 10px;
+}
+/* ================================================================= */
+                            /* Avis */
+/* ================================================================= */
+#Avis {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+#Avis .column {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+#Avis .line {
+    display: flex;
+    align-items: center;
+}
+#Avis .column li {
+    display: flex;
+    justify-content: center;
+}
+#Avis .column .column {
+    width: 60%;
+    border: #6FCA3A solid 5px;
+}
+#Avis .cadre {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#Avis span {
+    color: #04A118;
+    font-size: 200%;
+}
+#Avis img {
+    width: 100px;
+    height: 100px;
+    border-radius: 90px;
+}
+/* ================================================================= */
+                            /* Footer */
+/* ================================================================= */
+footer {
+    background: rgba(4,161,24,1);
+    color: #ffffff;
+    padding: 40px;
+}
+footer .line {
+    display: flex;
+    justify-content: space-between;
+}
+footer .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+footer h2 {
+    font-size: 15px;
+    padding-top: 40px;
+}
+footer .logo {
+    width: 300px;
+    height: 120px;
+}
+footer .bull {
+    color: white;
+}
+footer a {
+    color: #ffffff;
+}
+footer a:hover {
+    color: #e1ffd0;
 }
 /* ================================================================= */
                             /* Responsive */
