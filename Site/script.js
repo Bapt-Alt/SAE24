@@ -1,4 +1,7 @@
 
+/* ================================================================= */
+                            /* Ombre NavBar */
+/* ================================================================= */
 window.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY;
     var element = document.querySelector('.scroll-shadow');
@@ -10,6 +13,9 @@ window.addEventListener('scroll', function() {
     }
 });
 
+/* ================================================================= */
+                            /* Responsive */
+/* ================================================================= */
 const menuToggle = document.getElementById('menu-toggle');
 const navUl = document.querySelector('nav ul');
 
@@ -23,6 +29,9 @@ if (window.innerWidth <= 1200) {
 }
 });
 
+/* ================================================================= */
+            /* Effet de slide d'une partie a l'autre */
+/* ================================================================= */
 document.addEventListener('DOMContentLoaded', function() {
 // Écouteur d'événement pour tous les liens de navigation
 var navLinks = document.querySelectorAll('a.swipe');
@@ -47,4 +56,40 @@ link.addEventListener('click', function(e) {
 });
 });
 });
+
+/* ================================================================= */
+                            /* Déffilement des avis */
+/* ================================================================= */
+document.addEventListener('DOMContentLoaded', function() {
+    const avisElements = document.querySelectorAll('#Avis ul[data-id]');
+    let currentIndex = 0;
+  
+    avisElements.forEach(element => {
+      element.style.display = 'none';
+    });
+  
+    function afficherAvis() {
+      const avisActif = document.querySelector(`#Avis ul[data-id="${currentIndex+1}"]`);
+      avisActif.style.display = 'flex';
+  
+      setTimeout(cacherAvis, 10000);
+    }
+  
+    function cacherAvis() {
+      const avisActif = document.querySelector(`#Avis ul[data-id="${currentIndex+1}"]`);
+      avisActif.style.display = 'none';
+  
+      currentIndex++;
+  
+      if (currentIndex >= avisElements.length) {
+        currentIndex = 0;
+      }
+  
+      afficherAvis();
+    }
+  
+    afficherAvis();
+  });
+  
+  
 

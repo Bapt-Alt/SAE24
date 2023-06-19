@@ -18,17 +18,21 @@
     <title>Connexion</title>
 </head>
 <body>
-<section class="Connexion">
-    <div>
-        <h1 class="TitleAccount">Log In</h1>
+    <section id="Connexion">
+    <ul>
+        <li>
+            <h1>Log In</h1>
+        </li>
+        <li>        
         <form name="LogIn" action="./login.php" method="post">
             <label for="login">Your login :</label>
-            <input type="text" id="login" name="login" required>
-            <label for="passwd">Your password:</label>
-            <input type="password" id="password" name="passwd" required>
+            <input type="text" id="login" name="login" placeholder="Login" required>
+            <label for="passwd">Your password :</label>
+            <input type="password" id="password" name="passwd" placeholder="Password" required>
             <input type="submit" value="Submit">
         </form>
-    </div>
+        </li>
+    </ul>
     </section>
 </body>
 </html>

@@ -4,6 +4,7 @@
 /* vert : #04A118
 vert clair : #6FCA3A
 vert foncé : #437D21 */
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
 * {
@@ -221,8 +222,8 @@ nav .logo {
                             /* Avis */
 /* ================================================================= */
 #Avis {
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 300px;
+    margin-bottom: 300px;
 }
 #Avis .column {
     display: flex;
@@ -268,6 +269,75 @@ nav .logo {
     border-radius: 90px;
 }
 /* ================================================================= */
+                            /* Connexion */
+/* ================================================================= */
+#Connexion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Connexion ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+#Connexion h1 {
+    color: #04A118;
+    font-size: 40px;
+    padding: 70px 50px;
+}
+#Connexion form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: rgba(4, 161, 24, 0.35) 0px 5px 15px;
+    padding: 80px;
+}
+  
+#Connexion form label {
+    color: rgba(4, 161, 24, 1);
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+  
+#Connexion form input[type="text"],
+#Connexion form input[type="password"] {
+    padding: 15px;
+    margin-bottom: 25px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(4, 161, 24, 0.1);
+}
+  
+#Connexion form input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: rgba(4, 161, 24, 1);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(4, 161, 24, 0.2);
+}
+  
+
+#Connexion form input[type="submit"]:hover {
+    background-color: rgba(4, 161, 24, 0.8);
+}
+
+#Connexion form input[type="text"]::placeholder,
+#Connexion form input[type="password"]::placeholder {
+  color: rgba(4, 161, 24, 0.6);
+  font-style: italic;
+}
+/* ================================================================= */
                             /* Footer */
 /* ================================================================= */
 footer {
@@ -299,6 +369,7 @@ footer .bull {
 }
 footer a {
     color: #ffffff;
+    justify-content: center;
 }
 footer a:hover {
     color: #e1ffd0;
@@ -332,17 +403,17 @@ footer a:hover {
     nav ul.active {
         display: flex;
       }
-    ul li {
+    nav ul li {
       width: 100%;
       padding: 10px 0;
       justify-content: center;
     }
-     ul li a {
+    nav ul li a {
       font-size: 18px;
       color: black;
       transition: color 0.3s ease;
     }
-     ul li a:hover {
+    nav ul li a:hover {
       color: #6FCA3A;
     }
     #Accueil ul, #Cabinet ul{
@@ -351,9 +422,23 @@ footer a:hover {
         justify-content: center;
         align-items: center;
     }
+    #Equipe .line{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    #Trouver ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    footer h1 {
+        font-size: small;
+    }
+    footer .logo,footer .validateurs {
+        width: 150px;
+        height: 60px;
+    }
   }
-  
-
-
 
 
