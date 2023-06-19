@@ -1,6 +1,3 @@
-<?php 
-    session_start();
-?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -27,9 +24,19 @@
                 <li class="responsive bull"><p>&bull;</p></li>
                 <li><a class="swipe" href="#Trouver">Ou nous trouver</a></li>
                 <li class="responsive bull"><p>&bull;</p></li>
-                <a class="connexion_btn responsive" href="./connexion.php">Connexion</a>
-            </ul>
-            <a class="connexion_btn" href="./connexion.php">Connexion</a>
+                <?php 
+                    session_start();
+                    if (isset($_SESSION['admin']) && $_SESSION['admin'] === 'on') {
+                        echo'<a class="connexion_btn responsive" href="./connexion.php">Connecté</a>
+                            </ul>
+                            <a class="connexion_btn" href="./connexion.php">Connecté</a>';
+                    }
+                    else {
+                        echo'<a class="connexion_btn responsive" href="./connexion.php">Connexion</a>
+                            </ul>
+                            <a class="connexion_btn" href="./connexion.php">Connexion</a>';
+                    }
+                ?>
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
         </nav> 
@@ -171,7 +178,7 @@
             </li>
             <li>
                 <ul class="trois column">
-                    <li><a href=""><h1>&copy; Tous droits réversés</h1></a></li>
+                    <li><a href="./mentions-legales.php"><h1>&copy; Tous droits réversés</h1></a></li>
                     <li class="bull"><p>&bull;</p></li>
                     <li><a href="https://www.linkedin.com/in/baptiste-alteirac" target="_blank">Alteirac</a></li>
                     <li class="bull"><p>&bull;</p></li>
@@ -193,57 +200,6 @@
             </li>
         </ul>
     </footer>
-    <script>
-        window.addEventListener('scroll', function() {
-            var scrollPosition = window.scrollY;
-            var element = document.querySelector('.scroll-shadow');
-            
-            if (scrollPosition > 0) {
-                element.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.2)';
-            } else {
-                element.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0)';
-            }
-        });
-    </script>
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const navUl = document.querySelector('nav ul');
-
-        menuToggle.addEventListener('click', function() {
-        if (window.innerWidth <= 1200) {
-            if (navUl.classList.contains('active')) {
-            navUl.classList.remove('active');
-            } else {
-            navUl.classList.add('active');
-            }
-        }
-        });
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-        // Écouteur d'événement pour tous les liens de navigation
-        var navLinks = document.querySelectorAll('a.swipe');
-        navLinks.forEach(function(link) {
-        link.addEventListener('click', function(e) {
-            e.preventDefault(); // Empêche le comportement de lien par défaut
-            
-            // Récupère l'ID de la section cible depuis l'attribut href du lien
-            var targetId = link.getAttribute('href');
-            
-            // Trouve la section cible dans le DOM
-            var targetSection = document.querySelector(targetId);
-            
-            // Vérifie si la section cible existe et défile jusqu'à elle en douceur
-            if (targetSection) {
-            var targetOffsetTop = targetSection.offsetTop;
-            window.scrollTo({
-                top: targetOffsetTop,
-                behavior: 'smooth'
-            });
-            }
-        });
-        });
-  });
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>

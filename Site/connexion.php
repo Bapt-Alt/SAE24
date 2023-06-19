@@ -1,3 +1,12 @@
+<?php 
+    session_start();
+    if (isset($_SESSION['admin']) && $_SESSION['admin'] === 'on') {
+        echo '
+        <script>
+                window.location = "./groupe.php";
+        </script>';
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +18,17 @@
     <title>Connexion</title>
 </head>
 <body>
-    <section>
-        
+<section class="Connexion">
+    <div>
+        <h1 class="TitleAccount">Log In</h1>
+        <form name="LogIn" action="./login.php" method="post">
+            <label for="login">Your login :</label>
+            <input type="text" id="login" name="login" required>
+            <label for="passwd">Your password:</label>
+            <input type="password" id="password" name="passwd" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
     </section>
 </body>
 </html>
