@@ -29,7 +29,7 @@
                 <li class="responsive bull"><p>&bull;</p></li>
                 <a class="connexion_btn responsive" href="./connexion.php">Connexion</a>
             </ul>
-            <a class="connexion_btn" href="">Connexion</a>
+            <a class="connexion_btn" href="./connexion.php">Connexion</a>
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
         </nav> 
@@ -130,19 +130,19 @@
             <li>
                 <ul class="column cadre">
                     <li>
-                        <p><span>&quot;</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam officia fuga corrupti, vero accusantium consectetur facilis commodi ex error temporibus omnis, nemo doloribus repellat quos enim quibusdam porro modi exercitationem.<span>&quot;</span></p>
+                        <p class="texte"><span>&quot;</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam officia fuga corrupti, vero accusantium consectetur facilis commodi ex error temporibus omnis, nemo doloribus repellat quos enim quibusdam porro modi exercitationem.<span>&quot;</span></p>
                     </li>
-                    <li>--------------------------------</li>
+                    <li class="separateur">--------------------------------</li>
                     <li>
                         <ul class="line">
                             <li><img src="./Image/docteur.png" alt="Photo avis 1"></li>
-                            <li><p>1-2-3-4-5</p></li>
+                            <li><p class="etoile"><span>&#11089; &#11089; &#11089; &#11089; &#10025;</span></p></li>
                         </ul>
                     </li>
                  </ul>
-            </li>
+            </li>   
             <li>
-                <p>&bull; &bull; &bull; &bull; &bull;</p>
+                <p>&#10687; &bull; &bull; &bull; &bull;</p>
             </li>
         </ul>
     </section>

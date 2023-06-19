@@ -244,9 +244,23 @@ nav .logo {
 #Avis .cadre {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+#Avis .cadre .separateur {
+    padding: 20px;
+    color: #04A118;
+}
+#Avis .cadre .texte {
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#Avis .cadre .etoile {
+    padding-left: 50px;
+    padding-right: 10px;
+    font-size: 120%;
+}
 #Avis span {
     color: #04A118;
-    font-size: 200%;
+    font-size: 100%;
 }
 #Avis img {
     width: 100px;

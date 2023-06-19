@@ -6,11 +6,9 @@
     <!--CSS for the page-->
     <link rel="stylesheet" href="./Style/style.css">
     <link rel="icon" href="./Image/PetitLogo-removebg.png" type="image/gif">
-    <title>Connexion</title>
+    <title>Mentions Légales</title>
 </head>
 <body>
-    <section>
-        
-    </section>
+    
 </body>
 </html>
