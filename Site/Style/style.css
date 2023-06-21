@@ -87,6 +87,32 @@ nav .logo {
     display: none;
 }
 /* ================================================================= */
+                            /* Langues */
+/* ================================================================= */
+#Langues {
+    position: relative;
+    width: 100%;
+    z-index: 999;
+}
+#Langues ul {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+#Langues ul li img {
+    width: 40px;
+    height: 40px;
+    opacity: 0.5; 
+}
+
+#Langues img.selected {
+    opacity: 1; 
+}
+#Langues input[type="radio"] {
+    display: none;
+}
+
+/* ================================================================= */
                     /* Accueil & Cabinet & Équipe */
 /* ================================================================= */
 #Accueil, #Cabinet {
@@ -268,6 +294,10 @@ nav .logo {
     height: 100px;
     border-radius: 90px;
 }
+#Avis .column .cadre .line p {
+    padding-left: 5px;
+    padding-right: 10px;
+}
 /* ================================================================= */
                             /* Connexion */
 /* ================================================================= */
@@ -373,6 +403,27 @@ footer a {
 }
 footer a:hover {
     color: #e1ffd0;
+}
+/* ================================================================= */
+                            /* No JS */
+/* ================================================================= */
+#js-message {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(6px);
+    color: #04A118;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    text-align: center;
+}
+
+#js-message h1 {
+    margin-top: 20%;
+    transform: translateY(-50%);
 }
 /* ================================================================= */
                             /* Responsive */

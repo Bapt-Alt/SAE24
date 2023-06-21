@@ -90,6 +90,45 @@ document.addEventListener('DOMContentLoaded', function() {
   
     afficherAvis();
   });
+ /* ================================================================= */
+              /* Changement de classe pour les langues */
+/* ================================================================= */
+  function toggleCheckbox(checkbox) {
+    const images = document.querySelectorAll('#Langues img');
   
-  
+    images.forEach(function (image) {
+      if (image.parentNode.querySelector('input[type="radio"]').value === checkbox.value) {
+        image.classList.add('selected');
+      } else {
+        image.classList.remove('selected');
+      }
+    });
+  }
+ /* ================================================================= */
+              /* Permet de selectionner la langue */
+/* ================================================================= */  
+function toggleCheckbox(checkbox) {
+  const images = document.querySelectorAll('#Langues img');
+  const currentLang = checkbox.value;
+  let destinationPage;
+
+  images.forEach(function (image) {
+    if (image.parentNode.querySelector('input[type="radio"]').value === currentLang) {
+      image.classList.add('selected');
+
+      if (currentLang === 'fr') {
+        destinationPage = 'index.php'; // Si la langue actuelle est française, redirige vers la page anglaise
+      } else {
+        destinationPage = 'indexEN.php'; // Sinon, redirige vers la page française (ou une autre page)
+      }
+
+      window.location.href = destinationPage;
+    } else {
+      image.classList.remove('selected');
+    }
+  });
+}
+
+    
+
 

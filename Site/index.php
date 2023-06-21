@@ -7,9 +7,19 @@
     <!--CSS for the page-->
     <link rel="stylesheet" href="./Style/style.css">
     <link rel="icon" href="./Image/PetitLogo-removebg.png" type="image/gif">
-    <title>Home</title>
+    <title>BHGBY-fr</title>
 </head>
-<body>
+<body>  
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('js-message').style.display = 'none';
+        });
+        </script>
+
+        <div id="js-message" style="display: block;">
+            <center> <h1> Veuillez activer JavaScript pour permettre au site de fonctionner correctement. </h1> </center>
+        </div>
+    </script>
     <header class="scroll-shadow">
         <nav>
             <img class="logo" src="./Image/LogoVert.png" alt="Logo">
@@ -20,7 +30,7 @@
                 <li class="responsive bull"><p>&bull;</p></li>
                 <li><a class="swipe" href="#Equipe">Notre équipe</a></li>
                 <li class="responsive bull"><p>&bull;</p></li>
-                <li><a class="swipe" href="#Trouver">Ou nous trouver</a></li>
+                <li><a class="swipe" href="#Trouver">Où nous trouver</a></li>
                 <li class="responsive bull"><p>&bull;</p></li>
                 <li><a class="swipe" href="#RDV">Prise de RDV</a></li>
                 <li class="responsive bull"><p>&bull;</p></li>
@@ -41,6 +51,22 @@
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
         </nav> 
     </header>
+    <section id="Langues">
+        <ul>
+            <li>
+                <label>
+                    <input type="radio" name="langue" value="fr" onclick="toggleCheckbox(this)" checked>
+                    <img src="./Image/icons8france-removebg.png" alt="drapeau francais" class="selected">
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="langue" value="en" onclick="toggleCheckbox(this)">
+                    <img src="./Image/icons8usa-removebg.png" alt="drapeau usa">
+                </label>
+            </li>
+        </ul>
+    </section>
     <section id="Accueil">
         <ul>
             <li>
@@ -78,14 +104,14 @@
                     </li>
                     <li>
                         <ul class="column portrait">
-                            <li><img src="./Image/docteur.png" alt=""></li>
+                            <li><img src="./Image/H-generaliste.png" alt=""></li>
                             <li><h1>Hugo Calmels</h1></li>
                             <li><p>Généraliste</p></li>
                         </ul>
                     </li>
                     <li>
                         <ul class="column portrait">
-                            <li><img src="./Image/docteur.png" alt=""></li>
+                            <li><img src="./Image/G-dentiste.png" alt=""></li>
                             <li><h1>Gabin Lopez</h1></li>
                             <li><p>Dentiste</p></li>
                         </ul>
@@ -96,23 +122,23 @@
                 <ul class="line">
                     <li>
                         <ul class="column portrait">
-                            <li><img src="./Image/docteur.png" alt=""></li>
+                            <li><img src="./Image/Y-kine.png" alt=""></li>
                             <li><h1>Yassir Boulouiha</h1></li>
-                            <li><p>kinésithérapeute</p></li>
+                            <li><p>Kinésithérapeute</p></li>
                         </ul>
                     </li>
                     <li>
                         <ul class="column portrait">
-                            <li><img src="./Image/docteur.png" alt=""></li>
+                            <li><img src="./Image/B-kine.png" alt=""></li>
                             <li><h1>Alteirac Baptiste</h1></li>
-                            <li><p>kinésithérapeute</p></li>
+                            <li><p>Kinésithérapeute</p></li>
                         </ul>
                     </li>
                     <li>
                         <ul class="column portrait">
-                            <li><img src="./Image/docteur.png" alt=""></li>
+                            <li><img src="./Image/Benj-kine.png" alt=""></li>
                             <li><h1>Benjamin Sarrat</h1></li>
-                            <li><p>kinésithérapeute</p></li>
+                            <li><p>Kinésithérapeute</p></li>
                         </ul>
                     </li>
                 </ul>
@@ -142,8 +168,8 @@
                     <li class="separateur">--------------------------------</li>
                     <li>
                         <ul class="line">
-                            <li><img src="./Image/secretaire.jpeg" alt="Photo avis 1"></li>
-                            <li><p>Yassir Boulouiha</p></li>
+                            <li><img src="./Image/client2.png" alt="Photo avis 1"></li>
+                            <li><p>Carla Rosón Caleruega</p></li>
                             <li><p class="etoile"><span>&#11089; &#11089; &#11089; &#11089; &#10025;</span></p></li>
                         </ul>
                     </li>
@@ -162,7 +188,7 @@
                     <li class="separateur">--------------------------------</li>
                     <li>
                         <ul class="line">
-                            <li><img src="./Image/docteur.png" alt="Photo avis 1"></li>
+                            <li><img src="./Image/client3.png" alt="Photo avis 1"></li>
                             <li><p>Yassir Boulouiha</p></li>
                             <li><p class="etoile"><span>&#11089; &#11089; &#11089; &#11089; &#11089;</span></p></li>
                         </ul>
@@ -182,8 +208,8 @@
                     <li class="separateur">--------------------------------</li>
                     <li>
                         <ul class="line">
-                            <li><img src="./Image/secretaire.jpeg" alt="Photo avis 1"></li>
-                            <li><p>Yassir Boulouiha</p></li>
+                            <li><img src="./Image/client1.png" alt="Photo avis 1"></li>
+                            <li><p>Ilias Alami chentoufi</p></li>
                             <li><p class="etoile"><span>&#11089; &#11089; &#11089; &#11089; &#11089;</span></p></li>
                         </ul>
                     </li>
@@ -200,7 +226,7 @@
                 <h2>Formulaire de Prise de Rendez-vous</h2>
             </li>
             <li>
-                <form action="" method="post">
+                <form action="mail.php" method="post">
                     <label for="nom">Nom complet :</label>
                     <input type="text" id="nom" name="nom" required><br><br>
 
@@ -251,9 +277,9 @@
                     <li class="bull"><p>&bull;</p></li>
                     <li><a class="swipe" href="#Equipe">Notre équipe</a></li>
                     <li class="bull"><p>&bull;</p></li>
-                    <li><a class="swipe" href="">(Prise de RDV)</a></li>
+                    <li><a class="swipe" href="">Prise de RDV</a></li>
                     <li class="bull"><p>&bull;</p></li>
-                    <li><a class="swipe" href="#Trouver">Ou nous trouver</a></li>
+                    <li><a class="swipe" href="#Trouver">Où nous trouver</a></li>
                 </ul>
             </li>
             <li>
