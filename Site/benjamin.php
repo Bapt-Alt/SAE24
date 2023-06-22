@@ -9,19 +9,21 @@
     <title>Benjamin</title>
 </head>
 <body>
+    <!-- Hide the 'js-message' element when the DOM is fully loaded -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('js-message').style.display = 'none';
         });
     </script>
-
     <div id="js-message" style="display: block;">
         <h1> Veuillez activer JavaScript pour permettre au site de fonctionner correctement. </h1>
     </div>
+<!-- Website header -->
 <header class="scroll-shadow">
         <nav>
             <img class="logo" src="./Image/Logos/LogoVert.png" alt="Logo">
             <ul>
+                <!-- Navigation links -->
                 <li><a href="./index.php">Accueil</a></li>
                 <li class="responsive bull"><p>&bull;</p></li>
                 <li><a href="./groupe.php">Groupe</a></li>
@@ -36,6 +38,7 @@
                 <li class="responsive bull"><p>&bull;</p></li>
                 <li><a href="./yassir.php">Yassir</a></li>
                 <li class="responsive bull"><p>&bull;</p></li>
+                <!-- Check if user is logged in as admin -->
                 <?php 
                     session_start();
                     if (isset($_SESSION['admin']) && $_SESSION['admin'] === 'on') {
@@ -54,6 +57,7 @@
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
         </nav> 
     </header>
+    <!-- Main content section -->
     <section class="main">
         <h1>Benjamin Sarrat</h1>
         <h2>Chargé du réseaux</h2>
@@ -106,10 +110,8 @@
         La seule chose sur laquelle j’ai rencontré un problème est le NAT, c’était la première fois que je faisais de la translation d’adresse sur un routeur et en voulant me renseigner dans la documentation Cisco je suis tombé sur des commandes désuètes qui m’ont plus desservi que le contraire. Malgré ça, en discutant avec des camarades d’autres groupes j’ai fini par trouver comment paramétrer le NAT afin d’accéder à Internet depuis notre réseau.</p>
         <h2>Conclusion</h2>
         <p>La création de ce réseau pour la petite entreprise qu’est un cabinet paramédical s’est déroulée sans réel accroc et m’a permis de mieux maîtriser le fonctionnement d’une architecture réseau à petite échelle</p>
-
-
-
     </section>
+    <!-- Website footer -->
     <footer>
         <ul class="line">
             <li>

@@ -9,19 +9,21 @@
     <title>Yassir</title>
 </head>
 <body>
+    <!-- Hide the 'js-message' element when the DOM is fully loaded -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('js-message').style.display = 'none';
         });
     </script>
-
     <div id="js-message" style="display: block;">
         <h1> Veuillez activer JavaScript pour permettre au site de fonctionner correctement. </h1>
     </div>
+<!-- Website header -->
 <header class="scroll-shadow">
         <nav>
             <img class="logo" src="./Image/Logos/LogoVert.png" alt="Logo">
             <ul>
+                <!-- Navigation links -->
                 <li><a href="./index.php">Accueil</a></li>
                 <li class="responsive bull"><p>&bull;</p></li>
                 <li><a href="./groupe.php">Groupe</a></li>
@@ -36,6 +38,7 @@
                 <li class="responsive bull"><p>&bull;</p></li>
                 <li><a href="./yassir.php">Yassir</a></li>
                 <li class="responsive bull"><p>&bull;</p></li>
+                <!-- Check if user is logged in as admin -->
                 <?php
                     session_start();
                     if (isset($_SESSION['admin']) && $_SESSION['admin'] === 'on') {
@@ -54,6 +57,7 @@
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
         </nav> 
     </header>
+    <!-- Main content section -->
     <section class="main">
         <h1>Yassir Boulouiha</h1>
         <h2>Chargé de POP3 et Thunderbird</h2>
@@ -82,8 +86,8 @@
         <p>J’ai également aidé Baptiste a faire toute la partie PHP du site, et j’ai fait la base de données pour le site web qui elle contient une table qui contient deux colonnes login et mdp permettant de fait l'authentification de l’utilisateur au niveau du site web.</p>
         <h2>Conclusion </h2>
         <p>En résumé, j'ai été responsable des services SMTP, POP3 et FTP sur la VM Linux, de l'installation d'Esxi et du clonage des VM. La mise en place du serveur SMTP pour les boîtes vocales d'Asterisk a été la tâche la plus chronophage. J'ai initialement tenté de synchroniser les utilisateurs de l'Active Directory avec le serveur de messagerie SMTP, mais j'ai opté pour la création de comptes de messagerie distincts sur la machine Linux. J'ai résolu des problèmes liés au stockage des mails et au bon fonctionnement du FTP en recréant les utilisateurs avec les privilèges sudo. J'ai également aidé à configurer le DNS pour les sous-domaines mail.icpocc.fr et ftp.icpocc.fr. Dans le cadre d'Esxi, j'ai rendu les machines virtuelles compatibles avec la version 5.1 et les ai clonées avec succès. Enfin, j'ai contribué à la partie PHP du site web et créé la base de données pour l'authentification des utilisateurs.</p>
-        
     </section>
+    <!-- Website footer -->
     <footer>
         <ul class="line">
             <li>

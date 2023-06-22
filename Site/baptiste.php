@@ -9,19 +9,21 @@
     <title>Baptiste</title>
 </head>
 <body>
+    <!-- Hide the 'js-message' element when the DOM is fully loaded -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('js-message').style.display = 'none';
         });
     </script>
-
     <div id="js-message" style="display: block;">
         <h1> Veuillez activer JavaScript pour permettre au site de fonctionner correctement. </h1>
     </div>
+<!-- Website header -->
 <header class="scroll-shadow">
         <nav>
             <img class="logo" src="./Image/Logos/LogoVert.png" alt="Logo">
             <ul>
+                <!-- Navigation links -->
                 <li><a href="./index.php">Accueil</a></li>
                 <li class="responsive bull"><p>&bull;</p></li>
                 <li><a href="./groupe.php">Groupe</a></li>
@@ -36,6 +38,7 @@
                 <li class="responsive bull"><p>&bull;</p></li>
                 <li><a href="./yassir.php">Yassir</a></li>
                 <li class="responsive bull"><p>&bull;</p></li>
+                <!-- Check if user is logged in as admin -->
                 <?php 
                     session_start();
                     if (isset($_SESSION['admin']) && $_SESSION['admin'] === 'on') {
@@ -54,6 +57,7 @@
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
         </nav> 
     </header>
+    <!-- Main content section -->
     <section class="main">
         <h1>Baptiste Alteirac</h1>
         <h2>Chargé de la création du site web</h2>
@@ -86,6 +90,7 @@
         </p>
         <p>J'ai également eu des problèmes au niveau des validateurs car vu que le site n'est pas hébergé on ne peux pas faire de lien direct vers la page de validation avec le lien du site pré-rempli.</p>
     </section>
+    <!-- Website footer -->
     <footer>
         <ul class="line">   
             <li>

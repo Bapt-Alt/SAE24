@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Récupérer les valeurs soumises par le formulaire
+    // Retrieve form data
     $nom = $_POST["nom"];
     $email = $_POST["email"];
     $telephone = $_POST["telephone"];
@@ -9,13 +9,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $medecin = $_POST["medecin"];
     $informations = $_POST["informations"];
 
-    // Adresse e-mail de destination
-    $destinataire = "baptiste.alteirac.iut@gmail.com";
+    $destinataire = "baptiste.alteirac.iut@gmail.com"; // Test email address
 
-    // Sujet de l'e-mail
-    $sujet = "Nouveau rendez-vous";
+    $sujet = "New Appointment";
 
-    // Corps de l'e-mail
+    // Compose the message
     $message = "Nom: $nom\n";
     $message .= "Email: $email\n";
     $message .= "Téléphone: $telephone\n";
@@ -24,24 +22,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message .= "Médecin choisi: $medecin\n";
     $message .= "Informations supplémentaires:\n$informations";
 
-    // En-têtes de l'e-mail
     $headers = "From: $email";
 
-    // Envoyer l'e-mail
+    // Send the email
     if (mail($destinataire, $sujet, $message, $headers)) {
         echo "Votre rendez-vous a été envoyé avec succès.
         <script>
             setTimeout(function() {
                 window.location.href = './index.php';
-            }, 5000); // 5000 millisecondes = 5 secondes
+            }, 5000); // 5000 milliseconds = 5 seconds
         </script>";
-        
     } else {
         echo "Une erreur s'est produite lors de l'envoi du rendez-vous.
         <script>
             setTimeout(function() {
                 window.location.href = './index.php';
-            }, 5000); // 5000 millisecondes = 5 secondes
+            }, 5000); // 5000 milliseconds = 5 seconds
         </script>";
     }
 }

@@ -9,19 +9,21 @@
     <title>Groupe</title>
 </head>
 <body>
+    <!-- Hide the 'js-message' element when the DOM is fully loaded -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('js-message').style.display = 'none';
         });
     </script>
-
     <div id="js-message" style="display: block;">
         <h1> Veuillez activer JavaScript pour permettre au site de fonctionner correctement. </h1>
     </div>
+<!-- Website header -->
 <header class="scroll-shadow">
         <nav>
             <img class="logo" src="./Image/Logos/LogoVert.png" alt="Logo">
             <ul>
+                <!-- Navigation links -->
                 <li><a href="./index.php">Accueil</a></li>
                 <li class="responsive bull"><p>&bull;</p></li>
                 <li><a href="./groupe.php">Groupe</a></li>
@@ -36,6 +38,7 @@
                 <li class="responsive bull"><p>&bull;</p></li>
                 <li><a href="./yassir.php">Yassir</a></li>
                 <li class="responsive bull"><p>&bull;</p></li>
+                <!-- Check if user is logged in as admin -->
                 <?php 
                     session_start();
                     if (isset($_SESSION['admin']) && $_SESSION['admin'] === 'on') {
@@ -54,6 +57,7 @@
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
         </nav> 
     </header>
+    <!-- Main content section -->
     <section class="main" id="Groupe">
         <h1>&bull; Qui sommes nous ?</h1>
         <p>
@@ -116,6 +120,7 @@
         <p>Lorsque nous avons regroupé la partie téléphone et pc nous avons eu un problème de vlan et d’adresse ip. Effectivement, lorsque nous avions pensé à la topologie de base, nous n’avions pas mis de vlan et nous avions mis tous les équipements dans un seul réseau. À ce moment-là, nous nous sommes rendu compte qu’il allait falloir refaire la topologie entière. Nous avons donc changé toutes les adresses IP des serveurs, des PC et des téléphones. Il a donc fallu ajouter des pools pour les nouveaux réseaux. Il a aussi fallu faire du routage inter vlan que nous n’avions pas fait jusque-là. De plus, il a fallu changer l’adresse du proxy (du serveur asterisk) sur tous les téléphones. Après avoir effectué ces changements, le réseau téléphonique et le réseau des PC fonctionnaient ensemble parfaitement.<br>
             Le second problème que nous avons rencontré est que pour le téléchargement des VM sur la clé usb, car les personnes en charge du windows serveur n’étais pas présent à ce moment-là ce qui fait que la partie du groupe qui était présent on eu du mal à trouver les login et mots de passe du compte qui a tous les droits. Car sans ces identifiants, on ne pouvait pas se connecter en administrator et donc on n'avait pas les droits pour télécharger les VM. Nous avons finalement réussi à trouver le login et mots de passe et donc à télécharger les VM.<p/>
     </section>
+    <!-- Website footer -->
     <footer>
         <ul class="line">
             <li>

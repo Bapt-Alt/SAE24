@@ -9,19 +9,21 @@
     <title>Hugo</title>
 </head>
 <body>
+    <!-- Hide the 'js-message' element when the DOM is fully loaded -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('js-message').style.display = 'none';
         });
     </script>
-
     <div id="js-message" style="display: block;">
         <h1> Veuillez activer JavaScript pour permettre au site de fonctionner correctement. </h1>
     </div>
+<!-- Website header -->
 <header class="scroll-shadow">
         <nav>
             <img class="logo" src="./Image/Logos/LogoVert.png" alt="Logo">
             <ul>
+                <!-- Navigation links -->
                 <li><a href="./index.php">Accueil</a></li>
                 <li class="responsive bull"><p>&bull;</p></li>
                 <li><a href="./groupe.php">Groupe</a></li>
@@ -36,6 +38,7 @@
                 <li class="responsive bull"><p>&bull;</p></li>
                 <li><a href="./yassir.php">Yassir</a></li>
                 <li class="responsive bull"><p>&bull;</p></li>
+                <!-- Check if user is logged in as admin -->
                 <?php 
                     session_start();
                     if (isset($_SESSION['admin']) && $_SESSION['admin'] === 'on') {
@@ -54,6 +57,7 @@
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
         </nav> 
     </header>
+    <!-- Main content section -->
     <section class="main">
         <h1>Hugo Calmels</h1>
         <h2>Chargé de la téléphonie</h2>
@@ -138,9 +142,8 @@
         J’ai aussi rencontré un problème lorsque j’ai voulu faire parler asterisk. J’avais tout bien configuré, mais lorsque j’appelais le bon numéro alors rien ne se passait. J’ai donc commencé une session de débeugage qui a duré 2h. Au final, je me suis rendu compte qu’il fallait avoir accès à internet pour utiliser cette fonctionnalité. J’ai donc aidé mes camarades pour relier notre réseau privé à celui de la salle et à internet. Après avoir pu accéder à internet, cette fonctionnalité fonctionnait parfaitement.</p>
         <h3>Conclusion </h3>
         <p>Pour conclure j’ai vraiment apprécié faire ce travail de mise en place de réseaux et de service téléphonique. Malgré les quelques problèmes que j’ai rencontrés j’ai su trouver des solutions et avancer. J’ai fini mes tâches dans les temps données.</p>
-
-
     </section>
+    <!-- Website footer -->
     <footer>
         <ul class="line">
             <li>

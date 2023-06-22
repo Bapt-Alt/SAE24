@@ -9,19 +9,21 @@
     <title>Gabin</title>
 </head>
 <body>
+    <!-- Hide the 'js-message' element when the DOM is fully loaded -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('js-message').style.display = 'none';
         });
     </script>
-
     <div id="js-message" style="display: block;">
         <h1> Veuillez activer JavaScript pour permettre au site de fonctionner correctement. </h1>
     </div>
+<!-- Website header -->
 <header class="scroll-shadow">
         <nav>
             <img class="logo" src="./Image/Logos/LogoVert.png" alt="Logo">
             <ul>
+                <!-- Navigation links -->
                 <li><a href="./index.php">Accueil</a></li>
                 <li class="responsive bull"><p>&bull;</p></li>
                 <li><a href="./groupe.php">Groupe</a></li>
@@ -36,6 +38,7 @@
                 <li class="responsive bull"><p>&bull;</p></li>
                 <li><a href="./yassir.php">Yassir</a></li>
                 <li class="responsive bull"><p>&bull;</p></li>
+                <!-- Check if user is logged in as admin -->
                 <?php 
                     session_start();
                     if (isset($_SESSION['admin']) && $_SESSION['admin'] === 'on') {
@@ -54,6 +57,7 @@
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
         </nav> 
     </header>
+    <!-- Main content section -->
     <section class="main">
         <h1>Gabin Lopez</h1>
         <h2>Chargé de Windows Serveur</h2>
@@ -138,6 +142,7 @@
         <h2>Conclusion </h2>
         <p>J’ai réussi à faire tout ce qui était demander en tant réel même si sur certain point il y a des services qui m’on prit plus de temps que d’autre mais c’est un projet qui m’a beaucoup appris sur certaines choses comme la gestion des disques dédiées pour les utilisateurs et the dude pour avoir tout les réseaux et c'était un projet très intéressant.</p>
     </section>
+    <!-- Website footer -->
     <footer>
         <ul class="line">
             <li>

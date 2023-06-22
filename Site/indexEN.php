@@ -10,19 +10,21 @@
     <title>BHGBY-en</title>
 </head>
 <body>
+    <!-- Hide the 'js-message' element when the DOM is fully loaded -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('js-message').style.display = 'none';
         });
         </script>
-
         <div id="js-message" style="display: block;">
             <h1> Please enable JavaScript to allow the site to function properly. </h1>
         </div>
+    <!-- Website header -->
     <header class="scroll-shadow">
         <nav>
             <img class="logo" src="./Image/Logos/LogoVert.png" alt="Logo">
             <ul>
+                <!-- Navigation links -->
                 <li><a class="swipe" href="#Accueil">Home</a></li>
                 <li class="responsive bull"><p>&bull;</p></li>
                 <li><a class="swipe" href="#Cabinet">Office</a></li>
@@ -33,6 +35,7 @@
                 <li class="responsive bull"><p>&bull;</p></li>
                 <!-- <li><a class="swipe" href="#RDV">Appointments</a></li> -->
                 <li class="responsive bull"><p>&bull;</p></li>
+                <!-- Check if user is logged in as admin -->
                 <?php 
                     session_start();
                     if (isset($_SESSION['admin']) && $_SESSION['admin'] === 'on') {
@@ -50,6 +53,7 @@
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
         </nav> 
     </header>
+    <!-- Langues section -->
     <section id="Langues">
         <ul>
             <li>
@@ -66,6 +70,7 @@
             </li>
         </ul>
     </section>
+    <!-- Accuiel section -->
     <section id="Accueil">
         <ul>
             <li>
@@ -76,6 +81,7 @@
             <li><img src="./Image/Index/accueil-removebg.png" alt="Un docteur qui soigne un patient"></li>
         </ul>
     </section>
+    <!-- Cabinet section -->
     <section id="Cabinet">
         <ul>
             <li><img src="./Image/Index/cabinet-removebg.png" alt="Un cabinet"></li>
@@ -86,10 +92,12 @@
             </li>
         </ul>
     </section>
+    <!-- Slogan section -->
     <section id="Slogan">
         <h1>"Benevolus Hominibus, Genium Bonitate Yuvat"</h1>
         <h2>"Benevolence towards men nourishes the spirit through kindness"</h2>
     </section>
+    <!-- Equipe section -->
     <section id="Equipe">
         <ul class="column">
             <li>
@@ -144,6 +152,7 @@
             </li>
         </ul>
     </section>
+    <!-- Trouver section -->
     <section id="Trouver">
         <ul>
             <li>
@@ -157,6 +166,7 @@
             </li>
         </ul>
     </section>
+    <!-- Avis section -->
     <section id="Avis">
         <ul class="column" data-id="1">
             <li>
@@ -219,7 +229,7 @@
             </li>
         </ul>
     </section>
-    <!-- Formulaire en cours de construction ne fonctionne pas 
+    <!-- The form under construction doesn't work see Baptiste Alteirac's report for more info 
     <section id="RDV">
         <ul>
             <li>
@@ -261,6 +271,7 @@
         </ul>
     </section>
     -->
+    <!-- Website footer -->
     <footer>
         <ul class="line">
             <li>
