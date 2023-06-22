@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS for the page-->
     <link rel="stylesheet" href="./Style/style.css">
-    <link rel="icon" href="./Image/PetitLogo-removebg.png" type="image/gif">
+    <link rel="icon" href="./Image/Logos/PetitLogo-removebg.png" type="image/gif">
     <title>BHGBY-fr</title>
 </head>
-<body>  
+<body>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('js-message').style.display = 'none';
@@ -17,12 +17,11 @@
         </script>
 
         <div id="js-message" style="display: block;">
-            <center> <h1> Veuillez activer JavaScript pour permettre au site de fonctionner correctement. </h1> </center>
+            <h1> Veuillez activer JavaScript pour permettre au site de fonctionner correctement. </h1>
         </div>
-    </script>
     <header class="scroll-shadow">
         <nav>
-            <img class="logo" src="./Image/LogoVert.png" alt="Logo">
+            <img class="logo" src="./Image/Logos/LogoVert.png" alt="Logo">
             <ul>
                 <li><a class="swipe" href="#Accueil">Accueil</a></li>
                 <li class="responsive bull"><p>&bull;</p></li>
@@ -32,17 +31,17 @@
                 <li class="responsive bull"><p>&bull;</p></li>
                 <li><a class="swipe" href="#Trouver">Où nous trouver</a></li>
                 <li class="responsive bull"><p>&bull;</p></li>
-                <li><a class="swipe" href="#RDV">Prise de RDV</a></li>
+                <!-- <li><a class="swipe" href="#RDV">Appointments</a></li> -->
                 <li class="responsive bull"><p>&bull;</p></li>
                 <?php 
                     session_start();
                     if (isset($_SESSION['admin']) && $_SESSION['admin'] === 'on') {
-                        echo'<a class="connexion_btn responsive" href="./connexion.php">Connecté</a>
+                        echo'<li><a class="connexion_btn responsive" href="./connexion.php">Connecté</a></li>
                             </ul>
                             <a class="connexion_btn" href="./connexion.php">Connecté</a>';
                     }
                     else {
-                        echo'<a class="connexion_btn responsive" href="./connexion.php">Connexion</a>
+                        echo'<li><a class="connexion_btn responsive" href="./connexion.php">Connexion</a></li>
                             </ul>
                             <a class="connexion_btn" href="./connexion.php">Connexion</a>';
                     }
@@ -56,13 +55,13 @@
             <li>
                 <label>
                     <input type="radio" name="langue" value="fr" onclick="toggleCheckbox(this)" checked>
-                    <img src="./Image/icons8france-removebg.png" alt="drapeau francais" class="selected">
+                    <img src="./Image/Logos/icons8france-removebg.png" alt="drapeau francais" class="selected">
                 </label>
             </li>
             <li>
                 <label>
                     <input type="radio" name="langue" value="en" onclick="toggleCheckbox(this)">
-                    <img src="./Image/icons8usa-removebg.png" alt="drapeau usa">
+                    <img src="./Image/Logos/icons8usa-removebg.png" alt="drapeau usa">
                 </label>
             </li>
         </ul>
@@ -74,12 +73,12 @@
                     <span>Meilleurs</span> docteurs</h1>
                 <h2>Votre bien être et votre santé sont notre priorité</h2>
             </li>
-            <li><img src="./Image/accueil-removebg.png" alt="Un docteur qui soigne un patient"></li>
+            <li><img src="./Image/Index/accueil-removebg.png" alt="Un docteur qui soigne un patient"></li>
         </ul>
     </section>
     <section id="Cabinet">
         <ul>
-            <li><img src="./Image/cabinet-removebg.png" alt="Un cabinet"></li>
+            <li><img src="./Image/Index/cabinet-removebg.png" alt="Un cabinet"></li>
             <li>
                 <h1>Notre <span>Cabinet</span>,</h1>
                 <p><span>&bull;</span> Nos experts en médecine mettent tout en oeuvre <br> pour vous fournir les meilleurs soins dans les meilleurs delais. </p>
@@ -97,21 +96,21 @@
                 <ul class="line">
                     <li>
                         <ul class="column portrait">
-                            <li><img src="./Image/secretaire.jpeg" alt="@MadelineCline"></li>
+                            <li><img src="./Image/Docteurs/secretaire.jpeg" alt="@MadelineCline"></li>
                             <li><h1>Madelyn Cline</h1></li>
                             <li><p>Secrétaire</p></li>
                         </ul>
                     </li>
                     <li>
                         <ul class="column portrait">
-                            <li><img src="./Image/H-generaliste.png" alt=""></li>
+                            <li><img src="./Image/Docteurs/H-generaliste.png" alt=""></li>
                             <li><h1>Hugo Calmels</h1></li>
                             <li><p>Généraliste</p></li>
                         </ul>
                     </li>
                     <li>
                         <ul class="column portrait">
-                            <li><img src="./Image/G-dentiste.png" alt=""></li>
+                            <li><img src="./Image/Docteurs/G-dentiste.png" alt=""></li>
                             <li><h1>Gabin Lopez</h1></li>
                             <li><p>Dentiste</p></li>
                         </ul>
@@ -122,21 +121,21 @@
                 <ul class="line">
                     <li>
                         <ul class="column portrait">
-                            <li><img src="./Image/Y-kine.png" alt=""></li>
+                            <li><img src="./Image/Docteurs/Y-kine.png" alt=""></li>
                             <li><h1>Yassir Boulouiha</h1></li>
                             <li><p>Kinésithérapeute</p></li>
                         </ul>
                     </li>
                     <li>
                         <ul class="column portrait">
-                            <li><img src="./Image/B-kine.png" alt=""></li>
+                            <li><img src="./Image/Docteurs/B-kine.png" alt=""></li>
                             <li><h1>Alteirac Baptiste</h1></li>
                             <li><p>Kinésithérapeute</p></li>
                         </ul>
                     </li>
                     <li>
                         <ul class="column portrait">
-                            <li><img src="./Image/Benj-kine.png" alt=""></li>
+                            <li><img src="./Image/Docteurs/Benj-kine.png" alt=""></li>
                             <li><h1>Benjamin Sarrat</h1></li>
                             <li><p>Kinésithérapeute</p></li>
                         </ul>
@@ -168,7 +167,7 @@
                     <li class="separateur">--------------------------------</li>
                     <li>
                         <ul class="line">
-                            <li><img src="./Image/client2.png" alt="Photo avis 1"></li>
+                            <li><img src="./Image/Clients/client2.png" alt="Photo avis 1"></li>
                             <li><p>Carla Rosón Caleruega</p></li>
                             <li><p class="etoile"><span>&#11089; &#11089; &#11089; &#11089; &#10025;</span></p></li>
                         </ul>
@@ -188,7 +187,7 @@
                     <li class="separateur">--------------------------------</li>
                     <li>
                         <ul class="line">
-                            <li><img src="./Image/client3.png" alt="Photo avis 1"></li>
+                            <li><img src="./Image/Clients/client3.png" alt="Photo avis 1"></li>
                             <li><p>Yassir Boulouiha</p></li>
                             <li><p class="etoile"><span>&#11089; &#11089; &#11089; &#11089; &#11089;</span></p></li>
                         </ul>
@@ -208,7 +207,7 @@
                     <li class="separateur">--------------------------------</li>
                     <li>
                         <ul class="line">
-                            <li><img src="./Image/client1.png" alt="Photo avis 1"></li>
+                            <li><img src="./Image/Clients/client1.png" alt="Photo avis 1"></li>
                             <li><p>Ilias Alami chentoufi</p></li>
                             <li><p class="etoile"><span>&#11089; &#11089; &#11089; &#11089; &#11089;</span></p></li>
                         </ul>
@@ -220,6 +219,7 @@
             </li>
         </ul>
     </section>
+    <!-- Formulaire en cours de construction ne fonctionne pas 
     <section id="RDV">
         <ul>
             <li>
@@ -244,6 +244,7 @@
 
                     <label for="medecin">Choisissez le médecin :</label>
                     <select id="medecin" name="medecin" required>
+                        <option value="">Sélectionnez une médecin</option>
                         <option value="Hugo Calmels (Généraliste)">Hugo Calmels (Généraliste)</option>
                         <option value="Gabin Lopez (Dentiste)">Gabin Lopez (Dentiste)</option>
                         <option value="Baptiste Alteirac (Kiné)">Baptiste Alteirac (Kinésithérapeute)</option>
@@ -259,11 +260,12 @@
             </li>
         </ul>
     </section>
+    -->
     <footer>
         <ul class="line">
             <li>
                 <ul class="column">
-                    <li><img class="logo" src="./Image/LogoNoir-removebg.png" alt="Logo"></li>
+                    <li><img class="logo" src="./Image/Logos/LogoNoir-removebg.png" alt="Logo"></li>
                     <li><h2>"Benevolus Hominibus, Genium Bonitate Yuvat"</h2></li>
                 </ul>
             </li>
@@ -276,8 +278,8 @@
                     <li><a class="swipe" href="#Cabinet">Cabinet</a></li>
                     <li class="bull"><p>&bull;</p></li>
                     <li><a class="swipe" href="#Equipe">Notre équipe</a></li>
-                    <li class="bull"><p>&bull;</p></li>
-                    <li><a class="swipe" href="">Prise de RDV</a></li>
+                    <!--<li class="bull"><p>&bull;</p></li> -->
+                    <!-- <li><a class="swipe" href="#RDV">Appointments</a></li> -->
                     <li class="bull"><p>&bull;</p></li>
                     <li><a class="swipe" href="#Trouver">Où nous trouver</a></li>
                 </ul>
@@ -300,8 +302,8 @@
             <li>
                 <ul class="column">
                     <li><h1>Validateurs</h1></li>
-                    <li><a class="validateurs" href=""><img src="./Image/HTML5.png" alt="Validateurs HTML"></a></li>
-                    <li><a class="validateurs" href=""><img src="./Image/CSS3.png" alt="Validateurs CSS"></a></li>
+                    <li><a class="validateurs" href="https://validator.w3.org/nu/#textarea"><img src="./Image/Logos/HTML5.png" alt="Validateurs HTML"></a></li>
+                    <li><a class="validateurs" href="https://jigsaw.w3.org/css-validator/validator"><img src="./Image/Logos/CSS3.png" alt="Validateurs CSS"></a></li>
                 </ul>
             </li>
         </ul>

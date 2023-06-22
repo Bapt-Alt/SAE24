@@ -65,6 +65,8 @@ nav .logo {
     padding: 16px 45px;
     text-align: center;
     font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 .connexion_btn:hover {
     background: linear-gradient(-90deg, rgba(4,161,24,1) 61%, rgba(67,125,33,1) 100%);
@@ -403,6 +405,53 @@ footer a {
 }
 footer a:hover {
     color: #e1ffd0;
+}
+/* ================================================================= */
+                        /* Partie privé */
+/* ================================================================= */
+.main {
+    margin-top: 80px;
+    width: 90%;
+    padding-left: 10%;
+}
+.main h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.main h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.main h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.main p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.classe1 {
+    width: 80%;
+    height: 80%;
+}
+.classe2 {
+    width: 60%;
+    height: 60%;
+}
+.classe3 {
+    width: 80%;
+    height: 60%;
+}
+.classe4 {
+    width: 60%;
+    height: 80%;
+}
+.classe5 {
+    width: 40%;
+    height: 40%;
 }
 /* ================================================================= */
                             /* No JS */
