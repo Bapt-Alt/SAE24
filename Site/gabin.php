@@ -67,7 +67,7 @@
         <p>Ensuite on avait cette fenêtre qui s'affiché et on a sélectionné les rôles dont on avait besoin un à un. Pour bien configurer chaque rôle.</p>
         <img class="classe5" src="./Image/Gabin/Ajouter_les_roles.png" alt="Ajouter_les_roles">
         <p>Une fois que le DHCP s'était installé il fallait taper dans le menu démarrer dhcp cliqué dessus:</p>
-        <img class="classe5" src="./Image/Gabin/DHCP_menu_démarrer.png" alt="DHCP_menu_démarrer">
+        <img class="classe5" src="./Image/Gabin/DHCP_menu_demarrer.png" alt="DHCP_menu_démarrer">
         <p>Après avoir cliqué dessus on avait cette fenêtre qui apparaissait une fois cette fenêtre il fallait faire un clique droit sur IPV4 puis cliquer sur new scope.</p>
         <img class="classe5" src="./Image/Gabin/DHCP_new_scope.png" alt="DHCP_new_scope">
         <p>Après avoir cliqué sur new scope il fallait donner un nom qu’on voulait</p>
@@ -79,7 +79,7 @@
         <p>On a 5 scope différente car on a 5 vlan donc 1 scope par vlan </p>
         <img class="classe5" src="./Image/Gabin/dhcp_pour_tout_les_vlans.png" alt="dhcp_pour_tout_les_vlans">
         <p>Pour vérifier que le DHCP fonctionne bien on à fait un ipconfig sur un pc kiné qui est dans le vlan 3 donc qui doit avoir une adresse IP en 192.168.30.. Donc on peut voir que le DHCP marche bien car il à attribué une bonne adresse IP.</p>
-        <img class="classe5" src="./Image/Gabin/attribution_dhcp_kiné.PNG" alt="attribution_dhcp_kiné">
+        <img class="classe5" src="./Image/Gabin/attribution_dhcp_kine.PNG" alt="attribution_dhcp_kiné">
         <h3>DNS:</h3>
         <p>Il faut faire comme pour le DHCP c’est à dire aller dans add roles and features</p>
         <img class="classe5" src="./Image/Gabin/Pour_rajouter_ des_roles.png" alt="Pour_rajouter_ des_roles">
@@ -112,7 +112,7 @@
         <p>Pour pouvoir créer des utilisateurs ou des groupes il faut aller dans Active directory Users and computers qu’on à grâce à l’ajout du rôle Active Directory Domain Services.</p>
         <img class="classe5" src="./Image/Gabin/Ajouter_les_roles.png" alt="Ajouter_les_roles">
         <p>Pour créer des utilisateurs ou des groupes il faut faire un clique droit dans les Users on a une petite fenêtre avec plein de choses nous on va devoir aller dans new puis on peut voir qu’on peut ajouter des groupes, des utilisateurs et plein d'autres choses.</p>
-        <img class="classe5" src="./Image/Gabin/Création_utilisateur_et_groupe.png" alt="Création_utilisateur_et_groupe">
+        <img class="classe5" src="./Image/Gabin/Creation_utilisateur_et_groupe.png" alt="Création_utilisateur_et_groupe">
         <p>Pour créer un utilisateur cliquer sur User ça nous affiche cette fenêtre qu’on va remplir avec les information de l’utilisateur donc avec son nom qui l’aura sur son ordinateur.</p>
         <img class="classe5" src="./Image/Gabin/Create_user.png" alt="Create_user">
         <p>Après avoir donné les informations de l'utilisateur, on va pouvoir lui donner un mot de passe et choisir s' il veut le changer à sa première connexion ou si le mot de passe n'expire jamais.</p>
@@ -133,7 +133,7 @@
         <p>Après avoir cliquer sur properties on a  cette fenêtre aller dans quota et dans quota sélectionner enable quota management, deny disk space to users exceeding quota limit j’ai choisi de limiter les disques de 5 GB et quand ça arrive 1 GB avant d’être plein ça prévient l’utilisateur.</p>
         <img class="classe5" src="./Image/Gabin/Quota.png" alt="Quota">
         <p>Pour vérifier que les utilisateurs ont bien un disque de 5 GB chacun je suis allé sur un utilisateur pour vérifier. La on peut voir qu' il a bien un espace de disque dédiée</p>
-        <img class="classe5" src="./Image/Gabin/vérif_disque.PNG" alt="vérif_disque">
+        <img class="classe5" src="./Image/Gabin/verif_disque.PNG" alt="vérif_disque">
         <h3>The dude:</h3>
         <p>Pour the dude j’ai installer l’application sur le serveur ensuite il fallait le configurer avec le réseau du serveur c’est à dire 192.168.10.0 et vu qu’on a 5 vlans on a 5 réseaux différents donc il fallait le faire pour chaque réseaux pour avoir toute les machines.</p>
         <img class="classe5" src="./Image/Gabin/the_dude.PNG" alt="the_dude">
