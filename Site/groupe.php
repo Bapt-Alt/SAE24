@@ -98,7 +98,7 @@
         <h1>&bull; Gantt</h1>
         <h2>&bull; Gantt prévisionnel</h2>
         <img class="classe1" src="./Image/Gantt/Gantt-pré.png" alt="Gantt prévisionnel">
-        <h2>&bull; Gantt reel</h2>
+        <h2>&bull; Gantt réel</h2>
         <img class="classe1" src="./Image/Gantt/Gantt-final.png" alt="Gantt final">
         <h1>&bull; Répartitions du travail</h1>
         <h2>&bull; Baptiste Alteirac</h2>
@@ -113,7 +113,7 @@
         <h2>&bull; Gabin Lopez</h2>
         <p>Durant ce projet je me suis occupé du Windows serveur pour mettre en place les services demandés comme le DHCP et le DNS. Pour le DHCP je me suis occupé de configurer les plages d’adresse ip pour tous les vlans. Pour le dns je me suis occupée du forwarder pour avoir accès à internet et de la zone inverse pour que les client puisse accéder au dns. Je me suis également occupé de créer les utilisateurs et les groupes. Puis enfin j’ai fais the dude pour avoir toute la supervision de notre réseau.</p>
         <h3>Télécharger mon rapport <a href="./Rapports/Compte-rendu-Gabin-Lopez.pdf" download>ici</a></h3>
-        <h2>&bull; YassirBoulouiha</h2>
+        <h2>&bull; Yassir Boulouiha</h2>
         <p>Dans le cadre de ce projet, je me suis donc occupé des services SMTP POP3 et FTP au niveau de la VM Linux, j’ai produit le diagramme de gantt prévisionnel, fait l’installation d’EsXi avec le clonage des VM’s dessus, fait la base de données pour le site web, et j’ai épaulé Baptiste sur toute la partie du site nécessitant du PHP.</p>
         <h3>Télécharger mon rapport <a href="./Rapports/Compte-Rendu-Boulouiha-Yassir.pdf" download>ici</a></h3>
         <h1>&bull; Probleme de groupe</h1>
